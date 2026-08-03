@@ -9,7 +9,7 @@ import com.david.ApiMesaAyuda.entity.Usuario;
 
 
 public interface UsuarioRepository  extends JpaRepository<Usuario, Long>{
-    Optional <Usuario> findfindByEmail(String email);
+    Optional <Usuario> findByEmail(String email);
 
     boolean existexistsByEmail(String email);
 }

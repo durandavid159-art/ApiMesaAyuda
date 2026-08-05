@@ -6,7 +6,6 @@ import java.util.List;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.ErrorResponse;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
 
@@ -20,7 +19,7 @@ public class GlobalExceptionHandler {
         return construir(HttpStatus.FORBIDDEN, "No tiene permisos para realizar esa acción", request, null);
     }
 
-    private ResponseEntity<ErrorResponse> construir(HttpStatus Status, String mensaje, HttpServletRequest request, List<String> detalles){
+    private ResponseEntity<ErrorResponse> construir(HttpStatus status, String mensaje, HttpServletRequest request, List<String> detalles){
 
         ErrorResponse body = ErrorResponse.builder()
                 .timestamp(LocalDateTime.now())

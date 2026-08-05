@@ -12,13 +12,15 @@ import com.david.ApiMesaAyuda.exception.ErrorResponse;
 
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
+import lombok.RequiredArgsConstructor;
 import tools.jackson.databind.ObjectMapper;
 
 
 @Component
+@RequiredArgsConstructor
 public class JwtGestionAccesoDenegado implements AccessDeniedHandler{
     
-    private final ObjectMapper objectMapper = new ObjectMapper().findAndRegisterModules();
+    private final ObjectMapper objectMapper;
 
     @Override
     public void handle(HttpServletRequest request, HttpServletResponse response,

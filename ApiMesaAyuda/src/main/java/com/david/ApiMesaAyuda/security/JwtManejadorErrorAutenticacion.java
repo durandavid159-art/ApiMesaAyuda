@@ -7,7 +7,7 @@ import org.springframework.security.core.AuthenticationException;
 import org.springframework.security.web.AuthenticationEntryPoint;
 import org.springframework.stereotype.Component;
 
-import com.david.ApiMesaAyuda.exception.ErrorResponse;
+import com.david.ApiMesaAyuda.dto.ErrorResponse;
 
 import jakarta.servlet.ServletException; 
 import jakarta.servlet.http.HttpServletRequest;

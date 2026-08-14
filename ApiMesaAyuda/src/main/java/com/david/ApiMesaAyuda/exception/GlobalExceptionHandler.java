@@ -9,6 +9,8 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
 
+import com.david.ApiMesaAyuda.dto.ErrorResponse;
+
 import jakarta.servlet.http.HttpServletRequest;
 
 @RestControllerAdvice

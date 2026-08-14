@@ -21,7 +21,7 @@ public class UsuarioService {
     }
 
     @Transactional
-    public Usuario ascenderaASoporte(String email){
+    public Usuario ascenderASoporte(String email){
         Usuario usuario = buscarPorEmail(email);
         usuario.setRol(Rol.SOPORTE);
         return usuarioRepository.save(usuario);

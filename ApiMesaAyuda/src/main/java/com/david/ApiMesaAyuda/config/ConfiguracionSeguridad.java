@@ -23,9 +23,7 @@ public class ConfiguracionSeguridad {
     
     private final FiltroAutenticacionJwt filtroAutenticacionJwt;
     private final JwtManejadorErrorAutenticacion jwtManejadorErrorAutenticacion;
-
     private final JwtGestionAccesoDenegado jwtGestionAccesoDenegado;
-
     private final UserDetailsService servicioDetallesUsuario;
 
     @Bean

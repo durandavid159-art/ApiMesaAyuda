@@ -16,7 +16,7 @@ public class UsuarioService {
     
     private final UsuarioRepository usuarioRepository;
 
-    private Usuario buscarPorEmail(String email){
+    public Usuario buscarPorEmail(String email){
         return usuarioRepository.findByEmail(email).orElseThrow(() -> new RecursoNoEncontradoException("Usuario no encontrado: " + email));
     }
 

@@ -17,6 +17,7 @@ public class InicializadorDatos implements CommandLineRunner{
     private final UsuarioRepository usuarioRepository;
     private final PasswordEncoder encriptadorContrasenas;
 
+    @Override
     public void run(String... args){
         
         if (!usuarioRepository.existsByEmail("admin@helpdesk.com")){

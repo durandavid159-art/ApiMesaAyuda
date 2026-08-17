@@ -22,7 +22,7 @@ public class InicializadorDatos implements CommandLineRunner{
         
         if (!usuarioRepository.existsByEmail("admin@helpdesk.com")){
             Usuario admin = Usuario.builder()
-                .nombre("Administrador")
+                .nombre("SuperUsuario")
                 .email("admin@helpdesk.com")
                 .password(encriptadorContrasenas.encode("admin123"))
                 .rol(Rol.ADMIN)

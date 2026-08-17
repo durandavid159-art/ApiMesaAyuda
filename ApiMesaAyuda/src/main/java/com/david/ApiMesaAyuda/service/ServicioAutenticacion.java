@@ -49,7 +49,7 @@ public class ServicioAutenticacion {
         Usuario usuario = Usuario.builder()
             .nombre(solicitud.getNombre())
             .email(solicitud.getEmail())
-            .password(solicitud.getPassword())
+            .password(passwordEncoder.encode(solicitud.getPassword()))
             .rol(Rol.USUARIO)
             .build();
 

@@ -9,7 +9,7 @@ import com.david.ApiMesaAyuda.entity.Usuario;
 
 public interface RefreshTokenRepository extends JpaRepository <RefreshToken, Long>{
     
-    Optional<RefreshToken> findByToken(String tocken);
+    Optional<RefreshToken> findByToken(String token);
 
     void deleteByUsuario(Usuario usuario);
 }

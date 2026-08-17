@@ -43,7 +43,7 @@ public class TicketService {
     }
 
     public List <Ticket> misTikets(Usuario usuario){
-        return ticketRespository.findByCreadorPorOrderByCreadoEnDesc(usuario);
+        return ticketRespository.findByCreadoPorOrderByCreadoEnDesc(usuario);
     }
 
     public List <Ticket> listarTodos(){

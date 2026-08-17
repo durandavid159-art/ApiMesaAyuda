@@ -11,6 +11,6 @@ import com.david.ApiMesaAyuda.entity.Usuario;
 
 public interface TicketRespository extends JpaRepository<Ticket, Long> {
 
-    List<Ticket> findByCreadorPorOrderByCreadoEnDesc (Usuario creadorPor);
+    List<Ticket> findByCreadoPorOrderByCreadoEnDesc (Usuario creadorPor);
     List<Ticket> findByEstadoNotAndSlaVenceEnBefore(EstadoTicket estado, LocalDateTime fecha);
 }
